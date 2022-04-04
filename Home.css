@@ -1,0 +1,77 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-family: 'Bahnschrift', Arial, sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+  header{
+    width: 100%;
+    /* border: 2px solid red; */
+    margin:0;
+    padding:0;
+    background-color: rgba(163, 182, 208, 0.452);
+}
+
+nav{
+    font-size: 1.25rem;
+    height:75px;
+    background-color: rgb(223, 197, 157);
+    overflow: hidden;
+    font-size: 30px;
+    /* color: rgb(22, 32, 39); */
+    opacity: 0.8;
+    z-index: 1000;
+}
+nav a{
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    height: inherit;
+    line-height: 70px;
+    width: 120px;
+    font-weight: bolder;
+    color: rgb(69, 38, 8);
+    transition: 0.5s;
+ }
+li{
+    list-style-type: none;
+}
+
+ul{
+    display:inline-block;
+    text-decoration: none;
+    /* border-bottom:none; */
+    text-align: center;
+    margin:0 auto;
+    padding:1rem 2rem;
+    color:rgb(49, 25, 4);
+}
+
+
+ul:hover, ul:active, ul:focus{
+    border-bottom: 2px solid rgb(20, 27, 33);
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+}
+
+main{
+    text-align: center;
+    margin: 20rem auto;
+    text-shadow: 2px 2px 8px #555;
+    width:50%;
+    color: #fff;
+    font-size: 3rem;
+    /* border:2px solid red; */
+}
+

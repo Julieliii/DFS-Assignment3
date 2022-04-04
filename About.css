@@ -1,0 +1,172 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-family: 'Bahnschrift', Arial, sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+}
+
+  header{
+    width: 100%;
+    /* border: 2px solid red; */
+    margin:0;
+    padding:0;
+    /* background-color: rgba(163, 182, 208, 0.452); */
+}
+
+nav{
+    font-size: 1.25rem;
+    height:75px;
+    background-color: rgb(223, 197, 157);
+    overflow: hidden;
+    font-size: 30px;
+    /* color: rgb(22, 32, 39); */
+    opacity: 0.8;
+    z-index: 1000;
+}
+nav a{
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    height: inherit;
+    line-height: 70px;
+    width: 120px;
+    font-weight: bolder;
+    color: rgb(69, 38, 8);
+    transition: 0.5s;
+ }
+li{
+    list-style-type: none;
+}
+
+ul{
+    display:inline-block;
+    text-decoration: none;
+    /* border-bottom:none; */
+    text-align: center;
+    margin:0 auto;
+    padding:1rem 2rem;
+    color:rgb(49, 25, 4);
+}
+
+.mid{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.mid .ab{
+    width: 800px;
+    height: 300px;
+    box-shadow: 0 0 15px rgb(83, 103, 110);
+    /* background: rgba(71, 142, 175, 0.2); */
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.a1 .img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zdoFZVsag0OAEBm1jDawpHO5nmktPdMczg&usqp=CAU");
+}
+.a2 .img{
+    background-image: url("https://alchetron.com/cdn/nadir-afonso-a68c4b80-b056-4d86-ae55-1ea3aa19418-resize-750.jpg");
+}
+.a3 .img{
+    background-image: url("https://uploads4.wikiart.org/images/nadir-afonso.jpg!Portrait.jpg");
+}
+
+.ab p{
+    word-wrap: break-word;
+    color: rgb(41, 68, 68);
+    line-height: 26px;
+}
+
+.ab .txt{
+    width: 400px;
+    margin: 30px 50px 50px 50px;
+    text-align: center;
+}
+.ab .img{
+    width: 300px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.3);
+    opacity: 0.8;
+    transition: all 0.5s ease 0s;
+}
+.ab .img:hover{
+    transform: scale(1.1);
+}
+.ab .imghid{
+    overflow: hidden;
+}
+.a1{
+
+    margin-left: 40%;
+    animation: a1load 1s linear;
+    transition: 0.5s  1s;
+}
+.a2{
+    margin-left: 10%;
+    animation: a2load 1.56s linear;
+    transition: 0.5s;
+}
+.a3{
+    margin-left: 40%;
+    animation: a3load 2.0s linear;
+    transition: 0.5s;
+}
+.a3 h2{
+    margin-top: 100px;
+    line-height: 50px;
+}
+
+@keyframes a1load{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 600px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes a2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes a3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}

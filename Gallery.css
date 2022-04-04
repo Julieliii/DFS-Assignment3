@@ -1,0 +1,203 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html
+{
+  font-family: 'Bahnschrift', Arial, sans-serif;
+  font-size: 16px;
+  background-color: antiquewhite;
+}
+
+header{
+  width: 100%;
+  /* border: 2px solid red; */
+  margin:0;
+  padding:0;
+  /* background-color: rgba(163, 182, 208, 0.452); */
+}
+
+nav{
+  font-size: 1.25rem;
+  height:75px;
+  background-color: rgb(223, 197, 157);
+  overflow: hidden;
+  font-size: 30px;
+  /* color: rgb(22, 32, 39); */
+  opacity: 0.8;
+  z-index: 1000;
+}
+nav a{
+  display: block;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1;
+  height: inherit;
+  line-height: 70px;
+  width: 120px;
+  font-weight: bolder;
+  color: rgb(69, 38, 8);
+  transition: 0.5s;
+}
+li{
+  list-style-type: none;
+}
+
+ul{
+  display:inline-block;
+  text-decoration: none;
+  /* border-bottom:none; */
+  text-align: center;
+  margin:0 auto;
+  padding:1rem 2rem;
+  color:rgb(49, 25, 4);
+}
+
+
+ul:hover, ul:active, ul:focus{
+    border-bottom: 3px solid #fff;
+}
+  .container { 
+    width: 100%; 
+    /* border:2px solid blue; */
+  }
+  
+  .persons {
+    /* padding: 40px 0 20px; */
+    width:100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* border:2px solid red; */
+    /* display:inline; */
+  }
+  
+  .persons:before,
+  .persons:after {
+    clear: both;
+    content: " ";
+  }
+  
+  .persons .person {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+    padding:1rem;
+    background-color: #fff;
+    /* flex: 1; */
+    /* float: inline-start; */
+    cursor: pointer;
+  }
+  
+  .persons .person .avatar {
+    width: 100%;
+    height:75%;
+    text-align: center;
+    margin:0;
+    padding:0;
+  }
+  
+  .persons .person .avatar img {
+    width: 100%;
+    /* border: 1rem solid #fff; */
+    text-align: center;
+    /* border:2px solid green; */
+  }
+  
+  
+  .persons .person .fullname {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(69, 64, 64);
+    font-size: 20px;
+    padding:1rem 0;
+  }
+  
+  .persons .person .title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(46, 44, 44);
+    font-size: 16px;
+    padding:0 0 1rem 0;
+    color:rgb(0, 0, 0);
+  }
+  
+  .persons .person .js-description { display: none; }
+  @media screen and (max-width: 700px) {
+  
+  .persons .person { width: 50%; }
+  }
+  @media screen and (max-width: 400px) {
+  
+  .persons .person {
+    width: 100%;
+    border-left: medium none;
+  }
+  }
+  
+  .persons .js-dropdown {
+    background-clip: padding-box !important;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin: 40px 0 20px;
+    width: 100%;
+    display: table;
+    border-color: transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 10px 20px;
+  }
+  
+  .persons .js-dropdown:before,
+  .persons .js-dropdown:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+  @media screen and (max-width: 400px) {
+  
+  .persons .js-dropdown { border-left: medium none; }
+  }
+  
+  .persons .js-dropdown .js-dropdown-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 3px solid #E5E5E5;
+    color: #333333;
+    position: relative;
+    width: 96%;
+    margin:0 auto;
+    padding: 48px 32px 0;
+  }
+  
+  .persons .js-dropdown .js-dropdown-content .js-dropdown-arrow {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -55px;
+    border: 30px solid transparent;
+    border-bottom-color: #E5E5E5;
+    pointer-events: none;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  
+  .persons .js-dropdown .js-dropdown-content p {
+    line-height: 26px;
+    margin: 0 0 40px;
+    padding: 0;
+    font-size: 16px;
+  }
