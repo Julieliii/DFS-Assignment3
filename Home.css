@@ -26,6 +26,8 @@ nav{
     /* color: rgb(22, 32, 39); */
     opacity: 0.8;
     z-index: 1000;
+    justify-content: flex-end;
+    display: flex;
     /* border:2px solid red; */
 }
 
@@ -34,38 +36,40 @@ nav>h1{
     /* border:2px solid green; */
     font-size: 2rem;
     font-weight: bold;
-    float:left;
-    margin: 0;
+    /* float:left; */
+    margin-right:auto;
     padding:1rem 2rem;
 }
 
-nav>li{
+nav>ul{
     list-style-type: none;
-    width:70%;
-    display: inline;
-    float:right;
+    width:30%;
+    display: flex;
+    /* float:right; */
     margin:1rem 0 0 0;
     padding:1rem 2rem;
     /* border:2px solid blue; */
 }
 
-ul{
-    float:right;
+li{
+    /* float:right; */
     font-size: 1.25rem;
-    display:inline;
+    display:flex;
     text-decoration: none;
     border-bottom:2px solid rgba(0,0,0,0);
     text-align: center;
     margin:0 auto;
     padding:0 2rem;
     color:rgb(0, 0, 0); 
-    justify-content: center;
+    justify-content: flex-end;
     z-index: 1;
     /* line-height: 70px; */
     transition: 0.5s;
+    /* border:2px solid red; */
+
 }
 
-ul>a{
+li>a{
     text-decoration: none;
     color:rgb(0, 0, 0); 
 }
@@ -73,7 +77,7 @@ h1>a{
     text-decoration: none;
     color:rgb(0, 0, 0); 
 }
-ul:hover, ul:active, ul:focus{
+li:hover, li:active, li:focus{
     color:rgb(0, 0, 0); 
     border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
